@@ -1,0 +1,48 @@
+ .area {
+    padding-bottom: 94px;
+
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      gap: 30px;
+    }
+    
+    &__title {
+      color: var(--content-textcolor);
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.17;
+      text-align: center;
+    }
+    
+    &__item {
+      position: relative;
+    }
+    
+    &__thumb {
+      position: absolute;
+      bottom: 0;
+      width: 370px;
+      height: 70px;
+      background-color: rgba(46, 47, 59, 0.8);
+    }
+    
+    &__text {
+      margin-top: 27px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+  
