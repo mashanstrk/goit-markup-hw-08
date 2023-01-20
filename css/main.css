@@ -1426,8 +1426,8 @@ img {
   width: 100%;
   height: 100%;
   background-color: #ffffff;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
   -webkit-transition: -webkit-transform 500ms;
   transition: -webkit-transform 500ms;
   transition: transform 500ms;
