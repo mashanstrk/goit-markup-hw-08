@@ -1,10 +1,8 @@
   .team {
     background-color: var(--buttun-color);
 
-    @media screen and (min-width: 480px) {
       padding-top: 60px;
       padding-bottom: 60px; 
-    }
     
       @media screen and (min-width: 1200px) {
         padding-top: 94px;
@@ -52,7 +50,10 @@
     
     &__item:not(:last-child) {
 
-      margin-bottom: 30px;
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+
 
       @media screen and (min-width: 1200px) {
         margin-right: 30px;

@@ -187,7 +187,7 @@
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  padding: 118px 60px;
+  padding: 118px 15px;
   background-color: #c4c4c4;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
@@ -200,6 +200,11 @@
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    padding: 118px 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -267,10 +272,16 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 450px;
+  width: 400px;
   height: 609px;
   padding: 40px;
   background-color: #ffffff;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -305,7 +316,7 @@
 }
 .modal__title {
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -370,6 +381,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
+}
+
+.form__field:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -438,6 +452,7 @@ textarea:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 20px;
 }
 
 .checkbox {
@@ -474,8 +489,13 @@ textarea:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.71;
+}
+@media screen and (min-width: 480px) {
+  .confirm__label {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .confirm__label {
@@ -484,10 +504,15 @@ textarea:focus {
 }
 
 .confirm__link {
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.71;
   color: #2196f3;
   text-decoration: underline;
+}
+@media screen and (min-width: 480px) {
+  .confirm__link {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .confirm__link {
@@ -513,11 +538,9 @@ textarea:focus {
   cursor: pointer;
 }
 
-@media screen and (min-width: 480px) {
-  .feature {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.feature {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .feature {
@@ -598,6 +621,7 @@ textarea:focus {
 .feature__text {
   font-size: 14px;
   line-height: 1.71;
+  margin-bottom: 0;
 }
 
 .area {
@@ -645,11 +669,9 @@ textarea:focus {
   margin-bottom: 50px;
 }
 
-@media screen and (min-width: 480px) {
-  .clients {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .clients {
@@ -700,9 +722,19 @@ textarea:focus {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 479px) {
+  .clients__link {
+    margin-bottom: 15px;
+  }
+}
 @media screen and (min-width: 480px) {
   .clients__link {
     width: 210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -724,12 +756,8 @@ textarea:focus {
 
 .team {
   background-color: var(--buttun-color);
-}
-@media screen and (min-width: 480px) {
-  .team {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .team {
@@ -781,8 +809,10 @@ textarea:focus {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--background-color);
 }
-.team__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .team__item:not(:last-child) {
@@ -885,23 +915,20 @@ textarea:focus {
   background-color: var(--secondary-bcg-color);
 }
 
+.footer__tablet {
+  margin-bottom: 60px;
+}
 @media screen and (min-width: 768px) {
   .footer__tablet {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-left: 76px;
-    margin-right: 125px;
-    margin-bottom: 60px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .footer__tablet {
-    margin-left: 0px;
-    margin-right: 0px;
     margin-bottom: 0px;
   }
 }
@@ -941,13 +968,16 @@ textarea:focus {
   margin-bottom: 12px;
 }
 
-.address__link,
-.address__link.mail,
-.address__link.tel {
-  color: var(--additional-color);
+.address__link {
+  color: #ffffff;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.address__link.mail,
+.address__link.tel {
+  color: var(--additional-color);
 }
 
 .address__link:hover,
@@ -962,12 +992,16 @@ textarea:focus {
 .follow__group {
   text-align: center;
   margin-top: 60px;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .follow__group {
     margin-top: 0;
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .follow__group {
+    text-align: left;
   }
 }
 
@@ -1035,6 +1069,9 @@ textarea:focus {
   }
 }
 
+.subscribe {
+  text-align: center;
+}
 @media screen and (min-width: 1200px) {
   .subscribe {
     display: -webkit-box;
@@ -1043,6 +1080,7 @@ textarea:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: left;
   }
 }
 
@@ -1061,13 +1099,17 @@ textarea:focus {
 }
 
 .subscribe__input {
-  width: 450px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding: 15px 16px 15px 16px;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 480px) {
+  .subscribe__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe__input {
@@ -1423,10 +1465,15 @@ img {
 
 .mobile__menu-link {
   font-weight: 500;
-  font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #212121;
+  font-size: 30px;
+}
+@media (min-width: 480px) {
+  .mobile__menu-link {
+    font-size: 40px;
+  }
 }
 
 .mobile__menu-item:not(:last-child) {
@@ -1480,4 +1527,8 @@ img {
 
 .mobile__menu-social-item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile__menu-current {
+  color: #2196F3;
 }/*# sourceMappingURL=main.css.map */
