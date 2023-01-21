@@ -7,7 +7,10 @@
     background-color: #ffffff;
     transform: translateX(-200%);
     transition: transform 500ms;
-    padding-left: 40px;
+    padding-left: 20px;
+    @media (min-width: 480px) {
+        padding-left: 40px;
+    }
 }
 
 .mobile__menu.is-open {
