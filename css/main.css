@@ -1432,7 +1432,12 @@ img {
   transition: -webkit-transform 500ms;
   transition: transform 500ms;
   transition: transform 500ms, -webkit-transform 500ms;
-  padding-left: 40px;
+  padding-left: 20px;
+}
+@media (min-width: 480px) {
+  .mobile__menu {
+    padding-left: 40px;
+  }
 }
 
 .mobile__menu.is-open {
