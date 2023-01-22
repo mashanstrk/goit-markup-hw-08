@@ -89,12 +89,13 @@ color: #757575;
 
 .mobile__menu-social {
     display: flex;
-    margin-left: -10px;
+    flex-wrap: wrap;
     margin-top: 64px;
+    gap: 10px;
 } 
 
 .mobile__menu-social-link {
-    padding: 10px;
+    padding-right: 10px;
     font-weight: 500;
 font-size: 18px;
 line-height: 1.22;

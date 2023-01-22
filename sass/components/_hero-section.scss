@@ -101,14 +101,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
   
-    width: 400px;
+    min-width: 320px;
     height: 609px;
-    padding: 40px;
+    padding: 30px;
     background-color: #ffffff;
 
     @media screen and (min-width: 480px) {
       width: 450px;
       height: 609px;
+      padding: 40px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -290,7 +291,7 @@
   .confirm__label {
     display: flex;
     align-items: center;
-    font-size: 10px;
+    font-size: 8px;
     line-height: 1.71;
 
     @media screen and (min-width: 480px) {
@@ -303,7 +304,7 @@
   }
   
   .confirm__link {
-    font-size: 10px;
+    font-size: 8px;
     line-height: 1.71;
     color: #2196f3;
     text-decoration: underline;
