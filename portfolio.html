@@ -69,24 +69,32 @@
         <h1 class="visually-hidden">Портфоліо робіт студії</h1>
         <ul class="filter">
           <li class="filter__item">
-            <button type="button" class="filter__button">Усі</button>
+            <button type="button" class="filter__button" id="all">Усі</button>
           </li>
           <li class="filter__item">
-            <button type="button" class="filter__button">Веб-сайти</button>
+            <button type="button" class="filter__button" id="webSite">
+              Веб-сайти
+            </button>
           </li>
           <li class="filter__item">
-            <button type="button" class="filter__button">Додатки</button>
+            <button type="button" class="filter__button" id="app">
+              Додатки
+            </button>
           </li>
           <li class="filter__item">
-            <button type="button" class="filter__button">Дизайн</button>
+            <button type="button" class="filter__button" id="desine">
+              Дизайн
+            </button>
           </li>
           <li class="filter__item">
-            <button type="button" class="filter__button">Маркетинг</button>
+            <button type="button" class="filter__button" id="marketing">
+              Маркетинг
+            </button>
           </li>
         </ul>
         <section class="examples">
           <ul class="examples__list">
-            <li class="examples__item">
+            <li class="examples__item" data-category="webSite">
               <a class="examples__link" href="">
                 <div class="examples__thumb">
                   <img src="./images/project1.jpg" alt="Проект 1" width="370" />
@@ -105,7 +113,7 @@
                 </div>
               </a>
             </li>
-            <li class="examples__item">
+            <li class="examples__item" data-category="desine">
               <a class="examples__link" href="">
                 <div class="examples__thumb">
                   <img src="./images/project2.jpg" alt="Проект 2" width="370" />
@@ -124,7 +132,7 @@
                 </div>
               </a>
             </li>
-            <li class="examples__item">
+            <li class="examples__item" data-category="app">
               <a class="examples__link" href="">
                 <div class="examples__thumb">
                   <img src="./images/project3.jpg" alt="Проект 3" width="370" />
@@ -143,7 +151,7 @@
                 </div>
               </a>
             </li>
-            <li class="examples__item">
+            <li class="examples__item" data-category="marketing">
               <a class="examples__link" href="">
                 <div class="examples__thumb">
                   <img src="./images/project4.jpg" alt="Проект 4" width="370" />
@@ -162,7 +170,7 @@
                 </div>
               </a>
             </li>
-            <li class="examples__item">
+            <li class="examples__item" data-category="app">
               <a class="examples__link" href="">
                 <div class="examples__thumb">
                   <img src="./images/project5.jpg" alt="Проект 5" width="370" />
@@ -181,7 +189,7 @@
                 </div>
               </a>
             </li>
-            <li class="examples__item">
+            <li class="examples__item" data-category="webSite">
               <a class="examples__link" href="">
                 <div class="examples__thumb">
                   <img src="./images/project6.jpg" alt="Проект 6" width="370" />
@@ -200,7 +208,7 @@
                 </div>
               </a>
             </li>
-            <li class="examples__item">
+            <li class="examples__item" data-category="desine">
               <a class="examples__link" href="">
                 <div class="examples__thumb">
                   <img src="./images/project7.jpg" alt="Проект 7" width="370" />
@@ -219,7 +227,7 @@
                 </div>
               </a>
             </li>
-            <li class="examples__item">
+            <li class="examples__item" data-category="marketing">
               <a class="examples__link" href="">
                 <div class="examples__thumb">
                   <img src="./images/project8.jpg" alt="Проект 8" width="370" />
@@ -238,7 +246,7 @@
                 </div>
               </a>
             </li>
-            <li class="examples__item">
+            <li class="examples__item" data-category="app">
               <a class="examples__link" href="">
                 <div class="examples__thumb">
                   <img src="./images/project9.jpg" alt="Проект 9" width="370" />
@@ -348,5 +356,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/filter.js" type="module"></script>
   </body>
 </html>
