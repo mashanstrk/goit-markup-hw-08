@@ -1227,6 +1227,13 @@ textarea:focus {
           justify-content: center;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 767px) {
+  .filter {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+}
 
 .filter__item:not(:last-child) {
   margin-right: 10px;
@@ -1249,6 +1256,11 @@ textarea:focus {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 767px) {
+  .filter__button {
+    margin-bottom: 20px;
+  }
+}
 
 .filter__button:hover,
 .filter__button:focus {
@@ -1259,11 +1271,19 @@ textarea:focus {
 }
 
 .examples__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: grid;
+  grid-gap: 30px;
+  justify-items: center;
+}
+@media screen and (min-width: 768px) {
+  .examples__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .examples__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .card__text {
@@ -1273,13 +1293,23 @@ textarea:focus {
 }
 
 .examples__item {
-  width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  width: 320px;
+}
+@media screen and (min-width: 768px) {
+  .examples__item {
+    width: 340px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .examples__item {
+    width: 370px;
+  }
 }
 
-.examples__item:nth-child(3n) {
-  margin-right: 0px;
+@media screen and (min-width: 768px) {
+  .examples__item:nth-child(3n) {
+    margin-right: 0px;
+  }
 }
 
 .examples__item:nth-last-child(-n+3) {
@@ -1292,6 +1322,8 @@ textarea:focus {
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .examples__link:hover,
@@ -1357,6 +1389,83 @@ textarea:focus {
 .examples__link:focus .overlay {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+
+.contacts__page {
+  padding-top: 44px;
+  padding-bottom: 94px;
+}
+.contacts__page__container {
+  background-color: #e5f1fa;
+  padding: 100px 60px;
+  border-radius: 36px;
+}
+.contacts__page__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: var(--content-textcolor);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__page__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+.contacts__page__description {
+  font-size: 24px;
+  line-height: 1.71;
+  margin-bottom: 0;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__page__description {
+    font-size: 34px;
+    line-height: 1.36;
+  }
+}
+.contacts__page__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contacts__page__tel {
+  margin-top: 80px;
+}
+.contacts__page .contacts__page-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 64px;
+  gap: 10px;
+}
+.contacts__page .contacts__page-social-link {
+  padding-right: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+.contacts__page .contacts__page-social-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 :root {

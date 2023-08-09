@@ -7,6 +7,11 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
   }
   
   .filter__item:not(:last-child) {
@@ -29,6 +34,10 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+      }
   }
   
   .filter__button:hover,
@@ -39,8 +48,17 @@
   }
   
   .examples__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 30px;
+    justify-items: center;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
   
   .card__text {
@@ -50,13 +68,22 @@
   }
   
   .examples__item {
-    width: 370px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    width: 320px;
+
+    @media screen and (min-width: 768px) {
+      width: 340px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+    }
   }
   
   .examples__item:nth-child(3n) {
-    margin-right: 0px;
+    @media screen and (min-width: 768px) {
+      margin-right: 0px;
+    }
+
   }
   
   .examples__item:nth-last-child(-n + 3) {
@@ -67,6 +94,8 @@
     display: block;
   
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .examples__link:hover,

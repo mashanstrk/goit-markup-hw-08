@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Хедер -->
+
+    <header class="header">
+      <div class="container site__nav">
+        <nav class="nav">
+          <a class="nav__logo" href="./index.html">
+            <span class="nav__accent">Web</span>Studio
+          </a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html"> Студія </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./portfolio.html"> Портфоліо</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link current" href="./contacts.html"> Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon contacts__icon-envelope">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon contacts__icon-smartphone">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+        <button class="header__burger js-open-menu" type="button">
+          <svg width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="contacts__page">
+        <div class="container contacts__page__container">
+          <h1 class="contacts__page__title">ЗАВЖДИ НА ЗВ'ЯЗКУ!</h1>
+          <p class="contacts__page__description">
+            Залишились питання? Напишіть або зателефонуйте. Наші досвід та
+            знання у Вашому повному розпорядженні.
+          </p>
+          <div class="contacts__page__block">
+            <ul class="contacts__page__tel">
+              <li class="mobile__menu-contacts-item">
+                <a
+                  class="mobile__menu-contacts-link tel"
+                  href="tel:+380961111111"
+                >
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mobile__menu-contacts-item">
+                <a
+                  class="mobile__menu-contacts-link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="mobile__menu-contacts-item">
+                <a
+                  class="mobile__menu-contacts-link"
+                  href="https://goo.gl/maps/SLWkWDjMxcwVBbJh7"
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+            </ul>
+            <ul class="contacts__page-social">
+              <li class="contacts__page-social-item">
+                <a class="contacts__page-social-link" href="">Twitter</a>
+              </li>
+              <li class="contacts__page-social-item">
+                <a class="contacts__page-social-link" href="">Facebook</a>
+              </li>
+              <li class="contacts__page-social-item">
+                <a class="contacts__page-social-link" href="">LinkedIn</a>
+              </li>
+              <li class="contacts__page-social-item">
+                <a class="contacts__page-social-link" href="">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
