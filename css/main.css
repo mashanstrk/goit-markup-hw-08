@@ -1392,8 +1392,7 @@ textarea:focus {
 }
 
 .contacts__page {
-  padding-top: 44px;
-  padding-bottom: 94px;
+  padding: 44px 15px;
 }
 .contacts__page__container {
   background-color: #e5f1fa;
